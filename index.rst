@@ -13,6 +13,7 @@ Welcome to the SCD Openstack Cloud Guide
    intro
    setup
    access
+   openstackclient
    More about Openstack Dashboard <https://docs.openstack.org/horizon/latest/user/>
    document
 
