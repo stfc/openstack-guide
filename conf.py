@@ -88,13 +88,20 @@ html_theme = 'alabaster'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#
-# html_theme_options = {}
+
+
+
+html_theme_options = {
+  'font_family': 'sans-serif',
+  'head_font_family': 'sans-serif', 
+  'sidebar_collapse': 'false',
+  'page_width': '1280px', 
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['_static/custom.css']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
