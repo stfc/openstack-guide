@@ -13,7 +13,10 @@ Welcome to the SCD Openstack Cloud Guide
    intro
    setup
    access
+   volumes
    openstackclient
+   heat
+   init
    More about Openstack Dashboard <https://docs.openstack.org/horizon/latest/user/>
    document
 
