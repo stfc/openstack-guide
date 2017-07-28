@@ -47,8 +47,8 @@ master_doc = 'pages/index'
 
 # General information about the project.
 project = 'SCD Cloud Guide'
-copyright = '2017, Helen N'
-author = 'Helen N'
+copyright = '2017, Helen Norman'
+author = 'Helen Norman'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -72,7 +72,7 @@ language = None
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
+pygments_style = 'none'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False

@@ -6,7 +6,7 @@ This guide will help you set up and manage a virtual machine on the Openstack ST
 What is Openstack?
 -------------------------
 
-Openstack is a cloud server that hosts virtual machines. It also can be used for storage and security as  well as computing.
+Openstack is a collection of resources available for creating and managing virtual machines. These virtual machines can be used for storage and security as well as computing.
 
 find out more here_.
 
