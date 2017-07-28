@@ -12,7 +12,7 @@ Create an instance
 
 .. image:: https://image.ibb.co/gGQDfQ/launchinstance.png 
 
-- A Dialouge box will appear that has several tabs.
+- A Dialog box will appear that has several tabs.
 
 - Enter an instance name and how many you want to create (probably one)
 
