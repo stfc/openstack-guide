@@ -20,9 +20,7 @@ Welcome to the SCD Openstack Cloud Guide
    More about Openstack Dashboard <https://docs.openstack.org/horizon/latest/user/>
    document
 
-Indices and tables
+Search
 ==================
 
-* :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`

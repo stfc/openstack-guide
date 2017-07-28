@@ -42,21 +42,36 @@ For cloud config files, the first step using the cloud config is to define users
        ssh-authorized-keys:
          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDf0q4PyG0doiBQYV7OlOxbRjle026hJPBWDAaaaaxcdxd+eKHWuVXIpAiQlSElEBqQn0pOqNJZ3IBCvSLnrdZTUph4czNC4885AArS9NkyM7lK27Oo8RV8+NI5xPB/QT3Um2Zi7GRkIwIgNPN5uqUtXvjgAaaaaaaffcdc+i1CS0Ku4ld8vndXvr504jV9BMQoZrXEST3YlriOb8Wf7hYqphVMpF3b+8df96Pxsj0+iZqayS9wFcL8ITPApHi0yVwS8TjxEtI3FDpCbf7Y/DmTGOv49+AWBkFhS2ZwwGTX65L61PDlTSAzL+rPFmHaQBHnsli8U9N6E4XHDEOjbSMRX
 
-This snippet creates a user called example, who has access to sudo commands, uses the bash shell script, and has the listed SSH key added into their authorised keys. The full list of parameters for a user can be seen `here <https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting>`_
+This snippet creates a user called example, who has access to sudo commands, can use the bash shell script instaead of the default and has the listed SSH key added into their authorised keys. The full list of parameters for creating a user can be seen `here <https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting>`_
 
-groups can also be created to group users
+In YAML script, the spacing and indentation is important for the file to be parsed, so the list of parameters of a user needs to be indented from the main user section.To define more than one user, you would just add another item to the list with '-' on the same indentation as the previous one. 
+
+Groups can also be created to group users like this user has a 'sudo' group. There is also a group that is automatically created with a user that is named the same thing as a user. to create groups, use the script::
+
+   groups:
+     - group1
+     - group2: [user1, user2]
 
 You can also create and write to a file in the new server using write_files::
 
   write_files:
     - path: /test.txt
       content: |
-        Here is a line.
-        Another line is here.
+        This is a test file. Hello.
 
 All text that has no commands in should be prefaced by a '|' symbol.
 
-You can also run commands when booting using bootcmd and runcmd in your config file.
+Cloud-init can also be used to update and install packages. To install new packages, list them in a package section::
+
+   packages:
+     - package
+     - another_package
+
+You can also run commands when the instacnce is booting using bootcmd and runcmd and then writing the commands in a list::
+   
+   runcmd:
+     - cd user/
+     - mkdir files
 
 For a more extensive list of commands, read the `cloud-init readthedocs <http://cloudinit.readthedocs.io/en/latest/topics/examples.html>`_.
 
