@@ -1,14 +1,14 @@
 Instances
 ===========
 
-'Instances' displays your virtual machines and information about them. You can also create your own instances (using 'launch instance')
+'Instances' displays your virtual machines and information about them. You can create your own instances (using 'Launch Instance')
 
 .. image:: https://image.ibb.co/jTTMZk/instances.png
 
 Create an instance
 ------------------------
 
-- Click the button on the top right that says 'launch instance'.
+- Click the button on the top right that says 'Launch Instance'.
 
 .. image:: https://image.ibb.co/gGQDfQ/launchinstance.png 
 
@@ -20,7 +20,7 @@ Create an instance
 
 .. image:: https://image.ibb.co/iTNtfQ/instance_source.png
 
-- Flavours, the next tab, determine the size of your instance, so how much computing power it has. Choose a size from the list of available flavours (their specifications are listed).
+- Flavours, the next tab, determine the size of your instance (how much computing power it has). Choose a size from the list of available flavours (their specifications are listed).
 
 .. image:: https://image.ibb.co/bvRx75/flavourinstance.png
 

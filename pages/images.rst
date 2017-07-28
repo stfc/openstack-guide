@@ -14,7 +14,7 @@ You can manage your available images in the images tab:
 Create an Image
 -----------------------
 
-If you wish to upload an image into Openstack that you have downloaded:
+If you wish to upload an image into Openstack:
 
 .. image:: https://preview.ibb.co/dbuMjk/createimage.png
 

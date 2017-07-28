@@ -1,20 +1,20 @@
 Access & Security
 =================
 
-This is where you manage what can ping and connect to your virtual machine. It will be necessary to set up security groups and a key pair to be able to access your virtual machine.
+This is where you manage what can ping and connect to your virtual machine. It will be necessary to set up security groups and a key pair to be able to access your virtual machine and keep it secure.
 
 .. image:: https://preview.ibb.co/jDtc75/security.png
 
 Add a security rule
 ---------------------
 
-- Click 'manage rules' on the security group you want to edit (likely this will be the default security group).
+- Click 'manage rules' on the security group you want to edit (There will be a default security group available to you to use and edit but you can also create a new one).
 
 .. image:: https://preview.ibb.co/g2vFS5/rules.png
 
 - From here you can delete or create rules.
 
-- To create a new rule, click the 'add rule' button and a dialouge box will appear. To set up your virtual machine you will need two new rules:
+- To create a new rule, click the 'add rule' button and a dialouge box will appear. To set up your virtual machine you will need two new rules (in addition to the default security group):
 
 .. image:: https://preview.ibb.co/msy275/addssh.png
 

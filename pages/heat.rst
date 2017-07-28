@@ -12,7 +12,7 @@ To install a heat client on your virtual machine, use::
 
 (or use pip if you have it installed or apt-get if yum is not installed). 
 
-To test if it is working, type 'heat' into the command line and a list of options should appear.
+To test if it is installed successfully, type 'heat' into the command line and a list of options should appear.
 
 HOT
 ------------
@@ -72,5 +72,5 @@ This is more useful because the parameters can be chosen. All the parameters als
 
 Heat templates are very useful as you are able to create many resources in one template and link them together. There are also many more complicated things you can do, but the `Openstack Orchestration In Depth Guide <https://developer.rackspace.com/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat/>`_ explains it much better than I could.
 
-The `Openstack Documentation <https://docs.openstack.org/heat/latest/template_guide/index.html>`_ was also useful to check parameters for resources and other things.
+The `Openstack Heat Documentation <https://docs.openstack.org/heat/latest/template_guide/index.html>`_ may also be useful.
 

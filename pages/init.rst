@@ -1,9 +1,9 @@
 Cloud-Init
 ==============
 
-Clout init is a set of scripts that are executed when booting up an instance or stack. Most commercial images have it pre-installed on their images, but it also allows the user to customise how an instance boots by submitting user-data when creating an instance. This allows the user to provide the instance with users, files and scripts that should be installed when the instance boots.
+Clout init is a set of scripts that are executed when booting up an instance or stack. Most commercial images have it pre-installed, but it also allows the user to customise how an instance boots by submitting user-data when creating an instance. This allows the user to provide the instance with users, files and scripts that should be installed when the instance boots.
 
-This user data can be submitted as a cloud config file using YAML syntax to present information for the instance when it is booting or through a shell script. You can supply user data for an instance or stack either throught the Openstack dashboard, or by suppling a user data   file when booting up through the Openstack or heat command line client.
+This user data can be submitted as a cloud config file using YAML syntax to present information for the instance when it is booting or through a shell script. You can supply user data for an instance or stack either throught the Openstack dashboard, or by supplying a user data file when booting up through the Openstack or Heat command line client.
 
 Through the dashboard
 -----------------------
@@ -18,6 +18,8 @@ Through the command line
 You can specify user data when booting a stack using the command::
 
    heat stack create <stack_name> --user-data <file>
+
+(or use the Openstack Client commands)
 
 Cloud Config Files
 ----------------------
@@ -42,9 +44,9 @@ For cloud config files, the first step using the cloud config is to define users
        ssh-authorized-keys:
          - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDf0q4PyG0doiBQYV7OlOxbRjle026hJPBWDAaaaaxcdxd+eKHWuVXIpAiQlSElEBqQn0pOqNJZ3IBCvSLnrdZTUph4czNC4885AArS9NkyM7lK27Oo8RV8+NI5xPB/QT3Um2Zi7GRkIwIgNPN5uqUtXvjgAaaaaaaffcdc+i1CS0Ku4ld8vndXvr504jV9BMQoZrXEST3YlriOb8Wf7hYqphVMpF3b+8df96Pxsj0+iZqayS9wFcL8ITPApHi0yVwS8TjxEtI3FDpCbf7Y/DmTGOv49+AWBkFhS2ZwwGTX65L61PDlTSAzL+rPFmHaQBHnsli8U9N6E4XHDEOjbSMRX
 
-This snippet creates a user called example, who has access to sudo commands, can use the bash shell script instaead of the default and has the listed SSH key added into their authorised keys. The full list of parameters for creating a user can be seen `here <https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting>`_
+This snippet creates a user called example, who has access to sudo commands, can use the bash shell script instaead of the default and has the listed SSH key added into their authorised keys. The full list of parameters for creating a user can be seen `here <https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting>`_.
 
-In YAML script, the spacing and indentation is important for the file to be parsed, so the list of parameters of a user needs to be indented from the main user section.To define more than one user, you would just add another item to the list with '-' on the same indentation as the previous one. 
+In YAML script, the spacing and indentation is important for the file to be parsed, so the list of parameters of a user needs to be indented from the main user section.To define more than one user, you would just add another item to the list with '-' on the same indentation as the previous one. `YAML syntax <http://docs.ansible.com/ansible/latest/YAMLSyntax.html>`_.
 
 Groups can also be created to group users like this user has a 'sudo' group. There is also a group that is automatically created with a user that is named the same thing as a user. to create groups, use the script::
 
