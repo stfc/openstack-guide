@@ -1,18 +1,18 @@
 Using Heat
 =================
 
-Heat is the openstack cloud orchestration service that allows users to create templates, thet can then be read as code and used to automatically create cloud resources. The templates also can be used to show which things link to each other, eg. instances and security groups.
+Heat is the Openstack Cloud orchestration service that allows users to create templates in a `YAML format <http://docs.ansible.com/ansible/latest/YAMLSyntax.html>`_ that can then be read as code and used to create cloud resources. The templates also can be used to show that resources link to each other, eg. instances and security groups. You can also create multiple instances and link them together to run more complex apps, and scale your services.
 
 Setup
 -------
 
-To install a heat client on your vm, use::
+To install a heat client on your virtual machine, use::
 
    sudo yum install python-heatclient
 
-(or use pip) 
+(or use pip if you have it installed or apt-get if yum is not installed). 
 
-to test if it is working, type heat into the command line and a list of options should appear.
+To test if it is working, type 'heat' into the command line and a list of options should appear.
 
 HOT
 ------------
@@ -35,7 +35,7 @@ A very simple template to just launch an instance would look something like this
 
 A template must begin with the HOT template version. `Full list of versions <https://docs.openstack.org/heat/latest/template_guide/hot_spec.html#heat-template-version>`_.
 
-A template usually has 4 main sections: a description (though this is not necessary); parameters, which declares the inputs to the template; resources, which states resources that are being created; and outputs, which takes attributes from resources and outputs them. This template only has resources because it is not taking any external parameters or outputting anything, but this makes it a bad template as it cannot adapt.
+A template usually has 4 main sections: a description (though this is not necessary); parameters, which declares the inputs to the template; resources, which states resources that are being created; and outputs, which takes attributes from resources and outputs them. This template only has resources because it is not taking any external parameters or outputting anything, but this makes the template very fixed which is not useful.
 
 This following template allows parameters to be inputted by the person who runs the command::
 
@@ -70,7 +70,7 @@ This following template allows parameters to be inputted by the person who runs 
 
 This is more useful because the parameters can be chosen. All the parameters also have defaults, which is needed because if someone ran the template without inputting any parameters, the instance could still boot.
 
-Heat templates are most useful as you are able to create many resources in one template and link them together.
+Heat templates are very useful as you are able to create many resources in one template and link them together. There are also many more complicated things you can do, but the `Openstack Orchestration In Depth Guide <https://developer.rackspace.com/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat/>`_ explains it much better than I could.
 
-For a more detailed introduction and tutorial, look at the `OpenStack Orchestration In Depth Guide <https://developer.rackspace.com/blog/openstack-orchestration-in-depth-part-1-introduction-to-heat/>`_
+The `Openstack Documentation <https://docs.openstack.org/heat/latest/template_guide/index.html>`_ was also useful to check parameters for resources and other things.
 

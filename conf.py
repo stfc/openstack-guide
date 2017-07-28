@@ -95,7 +95,14 @@ html_theme_options = {
   'font_family': 'sans-serif',
   'head_font_family': 'sans-serif', 
   'sidebar_collapse': 'false',
-  'page_width': '1280px', 
+  'page_width': '1280px',
+  'sidebar_width': '280px', 
+  'fixed_sidebar': 'true',
+  'sidebar_header': '#004d8d',
+  'narrow_sidebar_bg': '#004d8d',
+  'narrow_sidebar_fg': 'white', 
+  'gray_1': '#004d8d',
+  'body_text': 'black',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
