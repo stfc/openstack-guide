@@ -7,4 +7,4 @@ The html files are not included in this repository. To generate them, download S
 
 Keep all the defaults, however say yes to the autodoc extention.
 
-once you have set up the directory, replace any files it generated with this repository and run the command $make html. This will generate all needed html pages. 
+once you have set up the directory, replace any files it generated (apart from "_build") with this repository and run the command $make html. This will generate all needed html pages. 
