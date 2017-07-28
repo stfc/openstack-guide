@@ -5,7 +5,7 @@ If you are using Windows, the easiest way to access your virtual machine is to u
 
 .. _here: http://www.putty.org/
 
-- First, open Pageant (the icon can be found in the bottom right status bar once you open the program) and click 'Add Key'.
+- First, open Pageant (the icon can be found in the bottom right status bar of the Windows taskbar once you open the program) and click 'Add Key'.
 
 .. image:: https://image.ibb.co/ebVMH5/pageant.png
 

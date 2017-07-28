@@ -17,9 +17,9 @@ Startup
 
 To link Openstack Client to your dashboard you will need to authenticate it using keystone:
 
-- go to API Access in the access and security tab and download Openstack RC File V3,
+- go to API Access in the access and security tab n your dashboard and download Openstack RC File V3,
 
-- Copy the contents of the file and paste it into a file of the same name in your VM,
+- Copy the contents of the file and create and paste it into a file of the same name in your VM,
 
 - Source that file and enter your Openstack dashboard password.
 
